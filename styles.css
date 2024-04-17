@@ -1,0 +1,53 @@
+:root {
+  --font-family: ui-sans-serif, system-ui, -apple-system, "BlinkMacSystemFont",
+    "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif;
+  --bg: #f9f9f9;
+  --fg: #0e0e0e;
+  --light-red: #be1c03;
+  --dark-red: #700701;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--bg);
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: inherit;
+  margin: 0;
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(var(--light-red), var(--dark-red));
+}
+h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #fff;
+  letter-spacing: -0.1rem;
+}
+article {
+  max-width: 48rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+p {
+  margin: 0.5rem 0 1rem;
+}
+h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+strong {
+  font-weight: 500;
+}
