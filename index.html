@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rapidpulse Adventure Wear</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Rapidpulse Adventure Wear clothing - coming soon!"
+    />
     <meta
       name="keywords"
       content="rapidpulse,rapid,pulse,adventure,wear,clothing,clothes"
@@ -12,7 +15,10 @@
     <meta name="application-name" content="Rapidpulse Adventure Wear" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Rapidpulse Adventure Wear" />
-    <meta property="og:description" content="" />
+    <meta
+      property="og:description"
+      content="Rapidpulse Adventure Wear clothing - coming soon!"
+    />
     <meta property="og:url" content="https://rapidpulse.com" />
     <meta property="og:site_name" content="Rapidpulse Adventure Wear" />
     <meta property="og:locale" content="en_US" />
@@ -27,7 +33,10 @@
     <!-- twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Rapidpulse Adventure Wear" />
-    <meta name="twitter:description" content="" />
+    <meta
+      name="twitter:description"
+      content="Rapidpulse Adventure Wear clothing - coming soon!"
+    />
     <meta name="twitter:image" content="./icon512.png" />
     <meta
       name="twitter:image:alt"
@@ -51,6 +60,125 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main></main>
+    <div id="loading"></div>
+    <main>
+      <header>
+        <div class="flex">
+          <div class="side">
+            <p class="tagline">Do it in the</p>
+          </div>
+          <div class="hero">
+            <img
+              src="./rapidpulse-adventure-wear.png"
+              alt="Rapidpulse Adventure Wear - do it in the RAW"
+              class="hero-img"
+            />
+            <h2>RAW</h2>
+            <h1>Rapidpulse Adventure Wear</h1>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div id="cloud">
+          <div class="cloud" id="cloud-base"></div>
+          <div class="cloud" id="cloud-back"></div>
+          <div class="cloud" id="cloud-mid"></div>
+          <div class="cloud" id="cloud-front"></div>
+          <svg width="0" height="0">
+            <filter id="filter-base">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.011"
+                numOctaves="5"
+                seed="8517"
+              />
+              <feDisplacementMap in="SourceGraphic" scale="120" />
+            </filter>
+            <filter id="filter-back">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.011"
+                numOctaves="3"
+                seed="8517"
+              />
+              <feDisplacementMap in="SourceGraphic" scale="120" />
+            </filter>
+            <filter id="filter-mid">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.011"
+                numOctaves="3"
+                seed="8517"
+              />
+              <feDisplacementMap in="SourceGraphic" scale="120" />
+            </filter>
+            <filter id="filter-front">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.009"
+                numOctaves="4"
+                seed="8517"
+              />
+              <feDisplacementMap in="SourceGraphic" scale="50" />
+            </filter>
+          </svg>
+        </div>
+        <div class="relative">
+          <h3>Proof of global warming</h3>
+          <hr />
+          <ul>
+            <li>
+              <figure>
+                <figcaption>1800's</figcaption>
+                <img
+                  src="./clothing-19th-century.png"
+                  alt="19th Century clothes"
+                />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>1900</figcaption>
+                <img src="./clothing-1900.png" alt="1900's clothes" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>1950</figcaption>
+                <img src="./clothing-1950.png" alt="1950's clothes" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>1970</figcaption>
+                <img src="./clothing-1970.png" alt="1970's clothes" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>1980</figcaption>
+                <img src="./clothing-1980.png" alt="1980's clothes" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>1990</figcaption>
+                <img src="./clothing-1990.png" alt="1990's clothes" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>2000's</figcaption>
+                <img
+                  src="./clothing-21st-century.png"
+                  alt="21st Century clothes"
+                />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./loader.js"></script>
   </body>
 </html>
